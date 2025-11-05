@@ -13,34 +13,64 @@ const About = () => {
         <h1 id="about-title">About TouristSafe</h1>
         <hr />
 
-        <div className="mission">
-          <h2>Mission</h2>
-          <p>Empower tourists with real-time safety and emergency support.</p>
+        <div className="intro">
+          <p>
+            <strong>TouristSafe</strong> is a modern platform designed to make your
+            travel experience safe, smart, and worry-free. Whether you are
+            exploring a new city or traveling abroad, we help you stay informed,
+            connected, and protected — anytime, anywhere.
+          </p>
         </div>
 
-        <div className="problem">
-          <h2>Problem Statement</h2>
+        <div className="mission">
+          <h2>Our Mission</h2>
+          <p>
+            To empower travelers with real-time safety insights, verified emergency support,
+            and digital tools that ensure peace of mind throughout their journey.
+          </p>
+        </div>
+
+        <div className="why-choose">
+          <h2>Why TouristSafe?</h2>
           <ul>
-            <li>Unsafe travel zones</li>
-            <li>Lack of verified help</li>
-            <li>No centralized emergency system</li>
+            <li>🔔 <strong>Emergency Alerts:</strong> Get instant updates about unsafe zones and incidents nearby.</li>
+            <li>📍 <strong>Nearby Help Centers:</strong> Find hospitals, police stations, and assistance quickly.</li>
+            <li>📂 <strong>Document Vault:</strong> Securely store and access travel documents anytime.</li>
+            <li>🌐 <strong>Offline Access:</strong> Critical info even without internet connectivity.</li>
+            <li>🛡️ <strong>Verified Data:</strong> All emergency data is sourced and validated for reliability.</li>
           </ul>
         </div>
 
-        <div className="tech">
-          <h2>Tech Stack</h2>
-          <p>React, Node.js, MongoDB</p>
+        <div className="vision">
+          <h2>Our Vision</h2>
+          <p>
+            To build a safer world for travelers — where technology bridges the gap between
+            travelers and trusted emergency networks. TouristSafe envisions becoming the global
+            standard for tourist safety and digital emergency management.
+          </p>
         </div>
 
-        <div className="credits">
-          <h2>Built by</h2>
-          <p>Sikha for [Competition Name]</p>
+        <div className="values">
+          <h2>Our Core Values</h2>
+          <ul>
+            <li>💡 Innovation</li>
+            <li>🤝 Trust</li>
+            <li>🌍 Global Awareness</li>
+            <li>❤️ Empathy</li>
+          </ul>
+        </div>
+
+        <div className="closing">
+          <p>
+            With <strong>TouristSafe</strong>, every journey becomes safer, every traveler more confident.
+            Your safety is not optional — it’s our mission.
+          </p>
         </div>
       </section>
 
       {/* Footer */}
       <footer className="footer">
-        <Footer/>
+        <Footer />
       </footer>
     </div>
   );
