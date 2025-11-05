@@ -1,0 +1,128 @@
+.auth-container {
+  font-family: 'Segoe UI', sans-serif;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+  background-image: url('../../assets/hero-bg.jpg'); /* adjust path if needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Tabs */
+.auth-tabs {
+  margin-bottom: 30px;
+}
+
+.auth-tabs button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 6px;
+  backdrop-filter: blur(6px);
+  transition: background-color 0.3s ease;
+}
+
+.auth-tabs .active {
+  background-color:  #8b5cf6;
+  color: white;
+  margin-top: 20px;
+}
+
+/* Forms */
+.auth-form {
+  width: 90%;
+  max-width: 500px;
+  margin-bottom: 40px;
+  padding: 40px 30px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.auth-form h2 {
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+
+.auth-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth-form input,
+.auth-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  backdrop-filter: blur(6px);
+  box-shadow: inset 0 0 4px rgba(255, 255, 255, 0.2);
+}
+
+.auth-form input::placeholder,
+.auth-form select {
+  color: #cccccc;
+}
+
+.auth-form button {
+  padding: 10px 24px;
+  font-size: 1rem;
+  background-color:  #8b5cf6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-form button:hover {
+  background-color: #0090cc;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  color: #cccccc;
+  padding: 20px;
+  font-size: 0.9rem;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .auth-form {
+    padding: 30px 20px;
+  }
+
+  .auth-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .auth-form input,
+  .auth-form select {
+    font-size: 0.95rem;
+  }
+
+  .auth-form button {
+    font-size: 0.95rem;
+  }
+}

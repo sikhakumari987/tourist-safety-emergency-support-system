@@ -1,0 +1,93 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background: rgba(139, 92, 246, 0.5); /* dark navy with transparency */
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  height: 40px;
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.3));
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff; /* bright white for contrast */
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.nav-links span::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #00bfff; /* sky blue accent */
+  transition: width 0.3s ease;
+}
+
+.nav-links span:hover {
+  color: #00bfff;
+}
+
+.nav-links span:hover::after {
+  width: 100%;
+}
+
+.nav-link {
+  display: inline-flex; /* ensures horizontal alignment */
+  align-items: center;  /* aligns icon and text vertically */
+  gap: 6px;             /* spacing between icon and text */
+  font-size: 16px;
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link i {
+  font-size: 16px;
+  line-height: 1; /* prevents vertical misalignment */
+  display: inline-block;
+  padding :4px;
+}
+
+.nav-link span {
+  line-height: 1; /* matches icon line height */
+  display: inline-block;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+    width: 100%;
+  }
+
+  .nav-links span {
+    font-size: 18px;
+  }
+}

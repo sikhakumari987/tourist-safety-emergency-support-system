@@ -1,0 +1,99 @@
+.about-container {
+  font-family: 'Segoe UI', sans-serif;
+  color: #ffffff;
+  min-height: 100vh;
+  background-image: url('../../assets/hero-bg.jpg'); /* adjust path if needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Glassy About Section */
+.about-section {
+  width: 90%;
+  max-width: 900px;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  padding: 60px 30px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.about-section h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.about-section hr {
+  width: 60%;
+  margin: 20px auto;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.about-section h2 {
+  font-size: 1.6rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #00bfff;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+}
+
+.about-section ul {
+  list-style-type: disc;
+  padding-left: 40px;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #e0e0e0;
+}
+
+.about-section li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  color: #cccccc;
+  padding: 20px;
+  font-size: 0.9rem;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 40px 16px;
+    margin-top: 80px;
+  }
+
+  .about-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .about-section p,
+  .about-section li {
+    font-size: 1rem;
+  }
+}
