@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './auth.css';
 import Navbar from '../../common/Navbar';
+import Footer from '../../common/Footer';
 
 const Auth = () => {
   const [activeTab, setActiveTab] = useState('Tourist');
@@ -107,7 +108,7 @@ const Auth = () => {
 
       {/* Footer */}
       <footer className="footer">
-        <p>Contact Info | Privacy Policy | Social Links</p>
+        <Footer/>
       </footer>
     </div>
   );

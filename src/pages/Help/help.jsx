@@ -1,6 +1,7 @@
 import React from 'react';
 import './help.css';
 import Navbar from '../../common/Navbar';
+import Footer from '../../common/Footer';
 
 const Help = () => {
   return (
@@ -29,7 +30,7 @@ const Help = () => {
 
       {/* Footer */}
       <footer className="footer">
-        <p>Contact Info | Privacy Policy | Social Links</p>
+        <Footer/>
       </footer>
     </div>
   );

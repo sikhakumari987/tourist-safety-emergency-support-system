@@ -1,6 +1,7 @@
 import React from "react";
 import "./landing.css";
 import Navbar from "../../common/Navbar";
+import Footer from "../../common/Footer";
 
 const Landing = () => {
   const features = [
@@ -57,7 +58,7 @@ const Landing = () => {
 
       {/* Footer */}
       <footer className="footer">
-        <p>© 2025 SafeJourney. All Rights Reserved.</p>
+        <Footer/>
       </footer>
     </div>
   );
